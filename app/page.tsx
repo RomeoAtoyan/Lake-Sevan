@@ -1,7 +1,13 @@
+import Footer from "@/components/footer";
+import ItemsList from "@/components/items-list";
+import Hero from "@/components/ui/hero";
+
 const Page = () => {
   return (
-    <div className="h-screen flex items-center justify-center">
-      <h1 className="text-4xl lg:text-9xl font-bold text-center">Next boilerplate</h1>
+    <div>
+      <Hero />
+      <ItemsList />
+      <Footer />
     </div>
   );
 };

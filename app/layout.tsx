@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
+import { Changa_One } from "next/font/google";
 import "./globals.css";
-import SessionProvider from "@/providers/session-provider";
+import Header from "@/components/ui/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const changaOne = Changa_One({
+  weight: "400",
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-changa",
 });
 
 export const metadata: Metadata = {
@@ -20,13 +23,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <SessionProvider>{children}</SessionProvider>
+    <html lang="en" className={`${changaOne.variable} ${geistSans.variable}`}>
+      <body className="min-h-screen bg-black font-sans">
+        <Header />
+        {children}
       </body>
     </html>
   );
