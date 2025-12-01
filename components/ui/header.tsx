@@ -70,7 +70,7 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center">
-        <h1 className="text-2xl font-thin text-white">Logo</h1>
+        <h1 className="text-2xl font-thin text-white">Lake Sevan</h1>
       </div>
 
       <div></div>
