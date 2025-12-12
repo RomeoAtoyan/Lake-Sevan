@@ -19,7 +19,7 @@ export const LanguageSelector = () => {
       <button
         onClick={() => handleLanguageChange("EN")}
         className={cn(
-          "w-8 h-8 rounded-md overflow-hidden border-2 transition-all border-transparent opacity-70 hover:opacity-100 hover:scale-110"
+          "w-12 h-12 rounded-md overflow-hidden border-2 transition-all border-transparent hover:scale-110"
         )}
         title="English"
       >
@@ -46,7 +46,7 @@ export const LanguageSelector = () => {
       <button
         onClick={() => handleLanguageChange("NL")}
         className={cn(
-          "w-8 h-8 rounded-md overflow-hidden border-2 transition-all border-transparent opacity-70 hover:opacity-100 hover:scale-110"
+          "w-12 h-12 rounded-md overflow-hidden border-2 transition-all border-transparent hover:scale-110"
         )}
         title="Nederlands"
       >
@@ -65,7 +65,7 @@ export const LanguageSelector = () => {
       <button
         onClick={() => handleLanguageChange("RU")}
         className={cn(
-          "w-8 h-8 rounded-md overflow-hidden border-2 transition-all border-transparent opacity-70 hover:opacity-100 hover:scale-110"
+          "w-12 h-12 rounded-md overflow-hidden border-2 transition-all border-transparent hover:scale-110"
         )}
         title="Русский"
       >
@@ -84,7 +84,7 @@ export const LanguageSelector = () => {
       <button
         onClick={() => handleLanguageChange("AM")}
         className={cn(
-          "w-8 h-8 rounded-md overflow-hidden border-2 transition-all border-transparent opacity-70 hover:opacity-100 hover:scale-110"
+          "w-12 h-12 rounded-md overflow-hidden border-2 transition-all border-transparent hover:scale-110"
         )}
         title="Հայերեն"
       >
