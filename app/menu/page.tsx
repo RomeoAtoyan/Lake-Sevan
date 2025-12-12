@@ -7,7 +7,7 @@ const Page = () => {
       <h1 className="text-center font-dynalight text-6xl mb-4 text-[#e0e0e0]">
         Lake Sevan
       </h1>
-      <p className="text-[#e0e0e0] font-poppins">A taste of the caucasus</p>
+      <p className="text-[#e0e0e0] font-poppins text-center">A taste of the caucasus</p>
       
       <div className="max-w-4xl mx-auto flex flex-col items-center pt-8">
         <h1 className="text-4xl font-light tracking-wide uppercase mb-8">
