@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Page = () => {
   return (
-    <div className="relative min-h-screen h-full">
+    <div className="relative max-h-screen overflow-hidden h-full">
       {/* Background */}
       <Image
         src={wallpaper}
