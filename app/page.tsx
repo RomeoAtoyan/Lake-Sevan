@@ -1,6 +1,6 @@
-
 "use client";
 import wallpaper from "@/public/wallpaper.jpg";
+import logo from "@/public/lake_sevan_logo_v2.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -29,9 +29,17 @@ const Page = () => {
       >
         <div className="text-center text-white max-w-2xl">
           {/* Title */}
-          <h1 className="font-dynalight text-8xl md:text-9xl font-semibold mb-6">
+          {/* <h1 className="font-dynalight text-8xl md:text-9xl font-semibold mb-6">
             Lake Sevan
-          </h1>
+          </h1> */}
+
+          <Image
+            src={logo}
+            alt="Lake Sevan background"
+            priority
+            quality={100}
+            className="object-contain aspect-square h-auto max-w-[250px] mx-auto"
+          />
 
           {/* Subtitle */}
           <p className="tracking-[0.4em] uppercase text-sm md:text-base text-white/80 mb-12 font-medium">
@@ -42,7 +50,9 @@ const Page = () => {
           <div className="w-40 h-[2px] mx-auto bg-white/50 mb-12" />
 
           {/* Status */}
-          <p className="text-2xl md:text-3xl font-medium mb-14 uppercase">Opening Soon</p>
+          <p className="text-2xl md:text-3xl font-medium mb-14 uppercase">
+            Opening Soon
+          </p>
 
           {/* Address */}
           <div className="text-base md:text-lg tracking-wide">

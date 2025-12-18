@@ -1,0 +1,39 @@
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lakesevan.be/sitemap.xml
+
+# Disallow crawling of admin and API routes
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all other paths
+Allow: /*
+
+# Crawl-delay: 10  # Uncomment if needed to limit crawl rate
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+
+# Block AI data collectors
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Block image-only search results
+User-agent: Googlebot-Image
+Allow: /images/
+Disallow: /*/images/
+
+# Block search engines from the staging site
+User-agent: *
+Disallow: /staging/
