@@ -30,40 +30,50 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lake Sevan - A Taste of the Caucasus',
-    template: '%s | Lake Sevan'
+    default: "Lake Sevan - A Taste of the Caucasus",
+    template: "%s | Lake Sevan",
   },
-  description: 'Experience the authentic flavors of Armenia at Lake Sevan, a fine dining restaurant in Antwerp. Enjoy traditional Armenian dishes made with the finest ingredients in an elegant setting.',
-  keywords: ['Armenian restaurant', 'Antwerp dining', 'Lake Sevan', 'Armenian cuisine', 'fine dining Antwerp', 'authentic Armenian food'],
-  authors: [{ name: 'Lake Sevan' }],
-  creator: 'Lake Sevan',
-  publisher: 'Lake Sevan',
-  metadataBase: new URL('https://lakesevan.be'),
+  description:
+    "Experience the authentic flavors of Armenia at Lake Sevan, a fine dining restaurant in Antwerp. Enjoy traditional Armenian dishes made with the finest ingredients in an elegant setting.",
+  keywords: [
+    "Armenian restaurant",
+    "Antwerp dining",
+    "Lake Sevan",
+    "Armenian cuisine",
+    "fine dining Antwerp",
+    "authentic Armenian food",
+  ],
+  authors: [{ name: "Lake Sevan" }],
+  creator: "Lake Sevan",
+  publisher: "Lake Sevan",
+  metadataBase: new URL("https://lakesevan.be"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    title: 'Lake Sevan - A Taste of the Caucasus',
-    description: 'Experience the authentic flavors of Armenia at Lake Sevan. Fine dining in the heart of Antwerp.',
-    url: 'https://lakesevan.be',
-    siteName: 'Lake Sevan',
-    locale: 'nl_BE',
-    type: 'website',
+    title: "Lake Sevan - A Taste of the Caucasus",
+    description:
+      "Experience the authentic flavors of Armenia at Lake Sevan. Fine dining in the heart of Antwerp.",
+    url: "https://lakesevan.be",
+    siteName: "Lake Sevan",
+    locale: "nl_BE",
+    type: "website",
     images: [
       {
-        url: '/lake_sevan_logo_v2.svg',
+        url: "/lake_sevan_logo_v2.svg",
         width: 1200,
         height: 630,
-        alt: 'Lake Sevan - Authentic Armenian Cuisine',
+        alt: "Lake Sevan - Authentic Armenian Cuisine",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Lake Sevan - A Taste of the Caucasus',
-    description: 'Experience the authentic flavors of Armenia at Lake Sevan. Fine dining in the heart of Antwerp.',
-    images: ['/lake_sevan_logo_v2.svg'],
-    creator: '@lakesevan_antwerp',
+    card: "summary_large_image",
+    title: "Lake Sevan - A Taste of the Caucasus",
+    description:
+      "Experience the authentic flavors of Armenia at Lake Sevan. Fine dining in the heart of Antwerp.",
+    images: ["/lake_sevan_logo_v2.svg"],
+    creator: "@lakesevan_antwerp",
   },
   robots: {
     index: true,
@@ -71,42 +81,46 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   icons: {
     icon: [
-      { url: '/lake_sevan_logo_v2.svg' },
-      { url: '/lake_sevan_logo_v2.svg', sizes: '16x16', type: 'image/svg+xml' },
-      { url: '/lake_sevan_logo_v2.svg', sizes: '32x32', type: 'image/svg+xml' },
+      { url: "/lake_sevan_logo_v2.svg" },
+      { url: "/lake_sevan_logo_v2.svg", sizes: "16x16", type: "image/svg+xml" },
+      { url: "/lake_sevan_logo_v2.svg", sizes: "32x32", type: "image/svg+xml" },
     ],
     apple: [
-      { url: '/lake_sevan_logo_v2.svg', sizes: '180x180', type: 'image/svg+xml' },
+      {
+        url: "/lake_sevan_logo_v2.svg",
+        sizes: "180x180",
+        type: "image/svg+xml",
+      },
     ],
     other: [
       {
-        rel: 'mask-icon',
-        url: '/lake_sevan_logo_v2.svg',
-        color: '#5bbad5',
+        rel: "mask-icon",
+        url: "/lake_sevan_logo_v2.svg",
+        color: "#5bbad5",
       },
     ],
   },
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",
   verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-    yandex: 'YANDEX_VERIFICATION_CODE',
+    google: "YOUR_GOOGLE_VERIFICATION_CODE",
+    yandex: "YANDEX_VERIFICATION_CODE",
   },
-  category: 'restaurant',
+  category: "restaurant",
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 5,
 };
@@ -121,7 +135,9 @@ export default function RootLayout({
       lang="en"
       className={`${changaOne.variable} ${geistSans.variable} ${dynalight.variable} ${poppins.variable}`}
     >
-      <body className="min-h-screen h-full font-sans">{children}</body>
+      <body className="min-h-screen bg-[radial-gradient(ellipse_at_center,_#2a2a2a_0%,_#1f1f1f_45%,_#141414_70%,_#0b0b0b_100%)] h-full font-sans">
+        {children}
+      </body>
       {/* <body className="bg-[radial-gradient(ellipse_at_center,_#2a2a2a_0%,_#1f1f1f_45%,_#141414_70%,_#0b0b0b_100%)] min-h-screen font-sans">
         {children}
       </body> */}
