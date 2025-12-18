@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Changa_One, Geist, Dynalight, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -137,6 +138,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-[radial-gradient(ellipse_at_center,_#2a2a2a_0%,_#1f1f1f_45%,_#141414_70%,_#0b0b0b_100%)] h-full font-sans">
         {children}
+        <Analytics />
       </body>
       {/* <body className="bg-[radial-gradient(ellipse_at_center,_#2a2a2a_0%,_#1f1f1f_45%,_#141414_70%,_#0b0b0b_100%)] min-h-screen font-sans">
         {children}
